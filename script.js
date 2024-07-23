@@ -156,17 +156,17 @@ checkoutBtn.addEventListener("click",function(){
     const isOpen = checkRestaurantOpen();
 
     if(!isOpen){
-
+ 
         Toastify({
             text: "RESTAURANTE ESTÁ FECHADO",
             duration: 3000,
-            gravity: "top", // `top` or `bottom`
-            position: "left", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            gravity: "top",
+            position: "left",
+            stopOnFocus: true,
             style: {
               background: "#EF4444",
             },
-            onClick: function(){} // Callback after click
+            onClick: function(){}
           }).showToast();
         return;
     }
